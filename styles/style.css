@@ -1,0 +1,86 @@
+/*============
+  google fonts
+  ============ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500&family=Raleway:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ==============
+   common styles
+   ============== */
+body {
+  background-color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+/* =================
+     banner styles
+   ================= */
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+.nav-bar {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 582px;
+  height: 270px;
+}
+.banner-left h1 {
+  width: 582px;
+  height: 133px;
+  color: #3a3a3a;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+  margin-bottom: 16px;
+}
+.banner-left p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.button {
+  width: 196px;
+  height: 44px;
+  background: #e02c6d;
+  border-radius: 41px;
+  padding: 10px 24px;
+  border: 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+.banner-right {
+  background-image: url(images/Circle.svg);
+  width: 475px;
+  height: 475px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px 30px 2px;
+}
+.banner-right img {
+  width: 440px;
+  height: 414px;
+}
