@@ -111,7 +111,6 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  border: 1px solid black;
 }
 .photos {
   width: 329px;
@@ -132,10 +131,74 @@ nav {
 .seemore-button a {
   text-decoration: none;
   position: absolute;
-  bottom: 0;
+  bottom: 400px;
   right: 75px;
   color: #e02c6d;
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
 }
+/*=============================== 
+  popular collection style end
+================================= */
+
+/*=============================
+  package section style start 
+=============================== */
+
+.package-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+.package-thumbnail img {
+  display: flex;
+  justify-content: center;
+  width: 404px;
+  height: 270px;
+}
+.package-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 224px;
+}
+.package-info h3 {
+  font-size: 28px;
+}
+.package-info p {
+  margin: 16px 0;
+}
+/* ====================
+   package area end
+   ==================== */
+
+/* ========================
+   footer area style start
+   ======================== */
+footer {
+  width: 1200px;
+  height: 239px;
+  margin: 0 auto;
+  background-color: #0a0826;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-area {
+  color: #ffffff;
+  width: 262px;
+  height: 139px;
+  text-align: center;
+}
+.fab {
+  padding: 16px;
+  font-size: 1.5em;
+}
+/*======================== 
+  footer area style end
+========================== */
+
+/* Media queries for responsive */
