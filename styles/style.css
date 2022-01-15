@@ -15,7 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   background-color: #ffffff;
   position: relative;
@@ -26,14 +26,12 @@ body {
 
 nav {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
-.nav-bar {
-  width: 1000px;
+.nav-bar h3 {
   display: flex;
-  justify-content: space-between;
-}
-.main-title {
+  padding-top: 50px;
+  padding-left: 80px;
   color: #3a3a3a;
   font-size: 24px;
   font-weight: bold;
@@ -91,6 +89,10 @@ nav {
   width: 440px;
   height: 414px;
 }
+.banner-right:hover img {
+  transform: rotate(360deg);
+  transition: transform 1s ease-in-out 0s;
+}
 
 /* ===================================
      popular collection styles start
@@ -123,6 +125,9 @@ nav {
 .photo-detail {
   text-align: start;
   padding: 15px;
+}
+.fas {
+  color: goldenrod;
 }
 .seemore-button {
   width: 75px;
@@ -179,7 +184,7 @@ nav {
    footer area style start
    ======================== */
 footer {
-  width: 1200px;
+  width: 1300px;
   height: 239px;
   margin: 0 auto;
   background-color: #0a0826;
@@ -201,4 +206,106 @@ footer {
   footer area style end
 ========================== */
 
-/* Media queries for responsive */
+/*============================
+  Media queries for responsive
+  ============================ */
+
+/*================ Mobile phone============== */
+
+@media only screen and (max-width: 576px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    height: 100%;
+  }
+  .banner {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 375px;
+    height: 100%;
+  }
+  .banner-left {
+    flex-direction: column;
+    width: 404px;
+    height: 100%;
+    order: 1;
+  }
+  .banner-left h1 {
+    width: 404px;
+    height: 78px;
+    line-break: auto;
+    font-size: 20px;
+  }
+
+  .banner-right {
+    width: 257px;
+    height: 257px;
+  }
+  .banner-right img {
+    width: 202px;
+    height: 190px;
+    order: 2;
+  }
+  .collection-area {
+    width: 329px;
+    height: 4504px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .seemore-button {
+    display: none;
+  }
+  .photo-album {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .package-area {
+    flex-direction: column;
+    width: 330px;
+    height: 600px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .package-thumbnail img {
+    width: 299px;
+    height: 188px;
+  }
+  .package-info h3 {
+    width: 311px;
+    height: 72px;
+    font-size: 24px;
+  }
+  .package-info p {
+    width: 329px;
+    height: 88px;
+    font-size: 16px;
+  }
+  footer {
+    width: 360px;
+    height: 211px;
+  }
+}
+/* ================tablet============== */
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .banner {
+    flex-direction: column;
+  }
+
+  .photo-album {
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+  }
+  .package-area {
+    flex-direction: column;
+    height: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+}
